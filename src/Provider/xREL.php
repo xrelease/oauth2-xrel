@@ -4,7 +4,6 @@ namespace xREL\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
-use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
@@ -14,7 +13,7 @@ class xREL extends AbstractProvider
     use BearerAuthorizationTrait;
 
     /**
-     * Get authorization url to begin OAuth flow
+     * Get authorization url to begin OAuth flow.
      *
      * @return string
      */
@@ -24,7 +23,7 @@ class xREL extends AbstractProvider
     }
 
     /**
-     * Get access token url to retrieve token
+     * Get access token url to retrieve token.
      *
      * @param array $params
      *
@@ -36,7 +35,7 @@ class xREL extends AbstractProvider
     }
 
     /**
-     * Get provider url to fetch user details
+     * Get provider url to fetch user details.
      *
      * @param AccessToken $token
      *
@@ -61,7 +60,7 @@ class xREL extends AbstractProvider
      * Check a provider response for errors.
      *
      * @param ResponseInterface $response
-     * @param array|string $data
+     * @param array|string      $data
      *
      * @throws IdentityProviderException
      */
@@ -79,7 +78,7 @@ class xREL extends AbstractProvider
     /**
      * Generate a user object from a successful user details request.
      *
-     * @param array $response
+     * @param array       $response
      * @param AccessToken $token
      *
      * @return League\OAuth2\Client\Provider\ResourceOwnerInterface
