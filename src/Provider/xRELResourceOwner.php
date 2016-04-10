@@ -7,7 +7,7 @@ use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 class xRELResourceOwner implements ResourceOwnerInterface
 {
     /**
-     * Raw response
+     * Raw response.
      *
      * @var
      */
@@ -24,7 +24,7 @@ class xRELResourceOwner implements ResourceOwnerInterface
     }
 
     /**
-     * Get resource owner id
+     * Get resource owner id.
      *
      * @return string|null
      */
@@ -44,7 +44,7 @@ class xRELResourceOwner implements ResourceOwnerInterface
     }
 
     /**
-     * Get resource owner name
+     * Get resource owner name.
      *
      * @return string|null
      */
@@ -54,7 +54,7 @@ class xRELResourceOwner implements ResourceOwnerInterface
     }
 
     /**
-     * Get resource owner avatar url
+     * Get resource owner avatar url.
      *
      * @return string|null
      */
