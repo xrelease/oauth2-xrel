@@ -6,7 +6,7 @@
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/xrelease/oauth2-xrel.svg?style=flat-square)](https://scrutinizer-ci.com/g/xrelease/oauth2-xrel/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/xrelease/oauth2-xrel.svg?style=flat-square)](https://scrutinizer-ci.com/g/xrelease/oauth2-xrel)
 [![Dependency Status](https://img.shields.io/versioneye/d/php/xrelease:oauth2-xrel/1.0.0.svg?style=flat-square)](https://www.versioneye.com/php/xrelease:oauth2-xrel/1.0.0)
-[![Total Downloads](https://img.shields.io/packagist/dt/xrelease/oauth2-xrel.svg?style=flat-square)](https://packagist.org/packages/xrelease/oauth2-xrel)
+
 This package provides xREL OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
 ## Installation
