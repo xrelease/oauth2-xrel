@@ -2,9 +2,9 @@
 
 namespace xREL\OAuth2\Client\Test\Provider;
 
-use xREL\OAuth2\Client\Provider\xREL;
 use Mockery as m;
 use ReflectionClass;
+use xREL\OAuth2\Client\Provider\xREL;
 
 class xRELTest extends \PHPUnit_Framework_TestCase
 {
@@ -15,6 +15,7 @@ class xRELTest extends \PHPUnit_Framework_TestCase
         $class = new ReflectionClass('xREL\OAuth2\Client\Provider\xREL');
         $method = $class->getMethod($name);
         $method->setAccessible(true);
+
         return $method;
     }
 
@@ -33,7 +34,6 @@ class xRELTest extends \PHPUnit_Framework_TestCase
         parent::tearDown();
     }
 
-
     public function testAuthorizationUrl()
     {
         $url = $this->provider->getAuthorizationUrl();
@@ -51,7 +51,7 @@ class xRELTest extends \PHPUnit_Framework_TestCase
 
     public function testScopes()
     {
-        $options = ['scope' => [uniqid(),uniqid()]];
+        $options = ['scope' => [uniqid(), uniqid()]];
 
         $url = $this->provider->getAuthorizationUrl($options);
 
@@ -135,7 +135,7 @@ class xRELTest extends \PHPUnit_Framework_TestCase
     {
         $error = uniqid();
         $message = uniqid();
-        $status = rand(400,600);
+        $status = rand(400, 600);
 
         $postResponse = m::mock('Psr\Http\Message\ResponseInterface');
         $postResponse->shouldReceive('getBody')->andReturn('{"access_token":"mock_access_token","expires_in":3600,"token_type":"bearer","refresh_token":"mock_refresh_token"}');
@@ -157,4 +157,3 @@ class xRELTest extends \PHPUnit_Framework_TestCase
         $user = $this->provider->getResourceOwner($token);
     }
 }
-
