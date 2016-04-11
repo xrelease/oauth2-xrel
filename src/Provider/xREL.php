@@ -69,8 +69,8 @@ class xREL extends AbstractProvider
         if ($response->getStatusCode() >= 400 || isset($data['error_type'])) {
             throw new IdentityProviderException(
                 $data['error'] ?: $response->getReasonPhrase(),
-                $response->getStatusCode(),
-                $response
+                $response->getStatusCode() ?: 0,
+                $data
             );
         }
     }

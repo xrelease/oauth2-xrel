@@ -1,6 +1,6 @@
 # xREL Provider for OAuth 2.0 Client
 [![Latest Version](https://img.shields.io/github/release/xrelease/oauth2-xrel.svg?style=flat-square)](https://github.com/xrelease/oauth2-xrel/releases)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Build Status](https://scrutinizer-ci.com/g/xrelease/oauth2-xrel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/xrelease/oauth2-xrel/build-status/master)
 [![HHVM Status](https://img.shields.io/hhvm/xrelease/oauth2-xrel.svg?style=flat-square)](http://hhvm.h4cc.de/package/xrelease/oauth2-xrel)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/xrelease/oauth2-xrel.svg?style=flat-square)](https://scrutinizer-ci.com/g/xrelease/oauth2-xrel/code-structure)
